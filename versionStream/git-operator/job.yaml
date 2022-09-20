@@ -47,7 +47,7 @@ spec:
                 name: jx-boot-job-env-vars
                 optional: true
           image: ghcr.io/jenkins-x/jx-boot:3.5.12
-          imagePullPolicy: Always
+          imagePullPolicy: IfNotPresent
           name: job
           volumeMounts:
             - mountPath: /workspace
